@@ -43,42 +43,56 @@ This project is a fully automated Job Application Assistant built using **n8n**,
 
 ---
 
-- Setup Instructions
+### 1. Clone the Repository
+git clone https://github.com/yourusername/job-assistant-automation.git
+2. Set Up Credentials
+Make sure the following credentials are available:
 
-> You must self-host or use an n8n cloud instance to run this project.
+🔑 OpenAI API Key
 
-1. Clone the Repo and get the JSON
-1.git clone https://github.com/yourusername/job-assistant-automation.git
-2.Set up Credentials
-3.OpenAI API Key
-4.Perplexity API Key
-5.DeepSeek API Key
-6.Gmail credentials (OAuth2 recommended)
-7.Google Sheet credentials
+🔑 Perplexity API Key
 
-8.Import Workflow
-9.Open n8n
-10.Click “Import Workflow” and upload the JSON
-11.Connect Nodes
-12.Authenticate all APIs
-13.Update Google Sheet ID and Gmail address
-14.Customize Resume
-15.Upload your PDF resume to Google Drive
-16.Set the download URL in the Google Drive node
+🔑 DeepSeek API Key
 
-- To-Do
-Add fallback email templates
-Integrate LinkedIn Easy Apply API
-Add dashboard for tracking results
-Improve error handling & alerts
+🔑 Gmail credentials (OAuth2 recommended)
 
-- Why This Project Matters
-This automation solves a real problem for job-seeking students — saving them countless hours by eliminating the repetitive, manual steps of applying to jobs. It's especially useful for batch applications while maintaining personalization — a critical factor in application success.
+🔑 Google Sheets credentials
 
-- Demo
+3. Import the Workflow
+Open your n8n instance
+
+Click "Import Workflow"
+
+Upload the provided JSON file
+
+4. Configure Nodes
+Authenticate all API nodes
+
+Update the Google Sheet ID
+
+Update the Gmail sender address
+
+5. Customize Resume
+Upload your PDF resume to Google Drive
+
+In the Google Drive node, set the download URL
+
+🛠 To-Do
+ Add fallback email templates
+
+ Integrate LinkedIn Easy Apply API
+
+ Add dashboard for tracking results
+
+ Improve error handling & alerts
+
+💡 Why This Project Matters
+This automation solves a real problem for job-seeking students — eliminating repetitive and manual steps in applying to jobs. It’s especially useful for sending batch applications while still maintaining the personalization that helps applicants stand out.
+
+📽 Demo
 Coming soon – video walkthrough & screenshots
 
-Author
+👨‍💻 Author
 Zeeshan Charolia
 📧 charoliazeeshan@gmail.com
 🌐 LinkedIn
