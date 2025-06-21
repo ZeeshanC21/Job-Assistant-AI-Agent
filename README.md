@@ -4,7 +4,7 @@ This project is a fully automated Job Application Assistant built using **n8n**,
 
 ---
 
-- 🚀 Features
+-  Features
 
 *End-to-End Automation**-: From job scraping to resume submission.
 *RSS + LinkedIn Feed Parsing*: Automatically fetches new job listings using LinkedIn and RSS feeds.
@@ -48,23 +48,23 @@ This project is a fully automated Job Application Assistant built using **n8n**,
 > You must self-host or use an n8n cloud instance to run this project.
 
 1. Clone the Repo and get the JSON
-git clone https://github.com/yourusername/job-assistant-automation.git
-Set up Credentials
-OpenAI API Key
-Perplexity API Key
-DeepSeek API Key
-Gmail credentials (OAuth2 recommended)
-Google Sheet credentials
+1.git clone https://github.com/yourusername/job-assistant-automation.git
+2.Set up Credentials
+3.OpenAI API Key
+4.Perplexity API Key
+5.DeepSeek API Key
+6.Gmail credentials (OAuth2 recommended)
+7.Google Sheet credentials
 
-Import Workflow
-Open n8n
-Click “Import Workflow” and upload the JSON
-Connect Nodes
-Authenticate all APIs
-Update Google Sheet ID and Gmail address
-Customize Resume
-Upload your PDF resume to Google Drive
-Set the download URL in the Google Drive node
+8.Import Workflow
+9.Open n8n
+10.Click “Import Workflow” and upload the JSON
+11.Connect Nodes
+12.Authenticate all APIs
+13.Update Google Sheet ID and Gmail address
+14.Customize Resume
+15.Upload your PDF resume to Google Drive
+16.Set the download URL in the Google Drive node
 
 - To-Do
 Add fallback email templates
@@ -78,7 +78,7 @@ This automation solves a real problem for job-seeking students — saving them c
 - Demo
 Coming soon – video walkthrough & screenshots
 
-🧑‍💻 Author
+Author
 Zeeshan Charolia
 📧 charoliazeeshan@gmail.com
 🌐 LinkedIn
