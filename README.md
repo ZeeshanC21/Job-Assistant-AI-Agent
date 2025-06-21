@@ -99,4 +99,4 @@ Author:
 
 Zeeshan Charolia
 - charoliazeeshan@gmail.com
-- LinkedIn
+- [LinkedIn](https://www.linkedin.com/in/zeeshancharolia)
