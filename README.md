@@ -87,13 +87,13 @@ In the Google Drive node, set the download URL
 
  Improve error handling & alerts
 
-- Why This Project Matters
+Why This Project Matters
 This automation solves a real problem for job-seeking students — eliminating repetitive and manual steps in applying to jobs. It’s especially useful for sending batch applications while still maintaining the personalization that helps applicants stand out.
 
-- Demo
+Demo
 Coming soon – video walkthrough & screenshots
 
-- Author
+Author
 Zeeshan Charolia
 - charoliazeeshan@gmail.com
 - LinkedIn
