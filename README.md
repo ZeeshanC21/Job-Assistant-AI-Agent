@@ -45,6 +45,7 @@ This project is a fully automated Job Application Assistant built using **n8n**,
 
 ### 1. Clone the Repository
 git clone https://github.com/yourusername/job-assistant-automation.git
+
 2. Set Up Credentials
 Make sure the following credentials are available:
 
@@ -77,7 +78,7 @@ Upload your PDF resume to Google Drive
 
 In the Google Drive node, set the download URL
 
-🛠 To-Do
+- To-Do
  Add fallback email templates
 
  Integrate LinkedIn Easy Apply API
@@ -86,13 +87,13 @@ In the Google Drive node, set the download URL
 
  Improve error handling & alerts
 
-💡 Why This Project Matters
+- Why This Project Matters
 This automation solves a real problem for job-seeking students — eliminating repetitive and manual steps in applying to jobs. It’s especially useful for sending batch applications while still maintaining the personalization that helps applicants stand out.
 
-📽 Demo
+- Demo
 Coming soon – video walkthrough & screenshots
 
-👨‍💻 Author
+- Author
 Zeeshan Charolia
-📧 charoliazeeshan@gmail.com
-🌐 LinkedIn
+- charoliazeeshan@gmail.com
+- LinkedIn
