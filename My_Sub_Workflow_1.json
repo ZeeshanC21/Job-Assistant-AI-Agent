@@ -1,0 +1,178 @@
+{
+  "name": "My Sub-Workflow 1",
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "email"
+            },
+            {
+              "name": "subject"
+            },
+            {
+              "name": "html_message"
+            }
+          ]
+        }
+      },
+      "id": "c055762a-8fe7-4141-a639-df2372f30060",
+      "typeVersion": 1.1,
+      "name": "When Executed by Another Workflow",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "position": [
+        260,
+        340
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"email\": \"{{ $json.query.email}}\",\n  \"title\": \"{{ $json.query.title}}\",\n  \"html_message\":\"{{ $json.query.html_message}}\"\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        480,
+        340
+      ],
+      "id": "b52db8a0-c457-4775-a039-5eb878482cf0",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1k6S3KjDzErWnLIRdX92YT0nCT9RcOKLD",
+          "mode": "list",
+          "cachedResultName": "ZeeshanCharolia_BTechCE.pdf",
+          "cachedResultUrl": "https://drive.google.com/file/d/1k6S3KjDzErWnLIRdX92YT0nCT9RcOKLD/view?usp=drivesdk"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        700,
+        340
+      ],
+      "id": "a61d7f8b-9fa9-40b7-b34b-755ee972e688",
+      "name": "Google Drive",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EyDmQ5doKsoa1tur",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('When Executed by Another Workflow').item.json.email }}",
+        "subject": "={{ $('When Executed by Another Workflow').item.json.subject }}",
+        "message": "={{ $('When Executed by Another Workflow').item.json.html_message }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        920,
+        340
+      ],
+      "id": "e9060a80-255c-48f8-956a-3b2dcf7a34e0",
+      "name": "Gmail",
+      "webhookId": "0e9e4c2c-9433-42f2-a325-c285c78ab3e5",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "LMC8lRcbnpy6PdmM",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "27fa4ddd-5324-427e-8209-f1d4e9193b8f",
+              "name": "response",
+              "value": "success",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1140,
+        340
+      ],
+      "id": "9a9e34a8-85ec-4ce9-900d-827f97048b17",
+      "name": "Edit Fields1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Google Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive": {
+      "main": [
+        [
+          {
+            "node": "Gmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gmail": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "b98acf8d-1aeb-4eb6-9114-2b0712cbe5a5",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d58344ca0c90f28997a7607f37e14c8b1f7f5a67e6ab0c96efef4039e0f96069"
+  },
+  "id": "RcF5ymlc7Twq5tYZ",
+  "tags": []
+}
