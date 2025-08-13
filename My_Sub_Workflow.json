@@ -73,6 +73,7 @@
         "sendTo": "={{ $('When Executed by Another Workflow').item.json.email }}",
         "subject": "={{ $('When Executed by Another Workflow').item.json.subject }}",
         "message": "={{ $('When Executed by Another Workflow').item.json.html_message }}",
+        "attachments": "data",
         "options": {
           "appendAttribution": false
         }
